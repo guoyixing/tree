@@ -3,7 +3,15 @@
 方便的查询树中的节点，某个几节点的所有父级等
 
 # 使用方法
-1. 将需要的树结构化的类添加TreeI接口
+1. 添加maven依赖
+   ```xml
+   <dependency>
+       <groupId>io.github.guoyixing</groupId>
+       <artifactId>tree</artifactId>
+       <version>1.0</version>
+   </dependency>
+   ```
+2. 将需要的树结构化的类添加TreeI接口
     ```java
     public class Menu implements TreeI {
         private String id;
@@ -28,7 +36,7 @@
         }
     }
     ```
-2. 生成树结构
+3. 生成树结构
    ```java
     public class Test {
         public static void main(String[] args) {
@@ -47,7 +55,7 @@
     }
    ```
 
-3. 效果
+4. 效果
     ```json
     [
         {
